@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="640dp"
+    tools:context=".LoginUser">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFBF40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:gravity="center"
+            android:text="@string/registrationText"
+            android:textSize="42sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#FFD073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/innerData"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="91dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Логин"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="153dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="215dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Номер телефона"
+            android:inputType="number"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="277dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Фамилия"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="339dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="401dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="450dp"
+            android:backgroundTint="@color/btnColor"
+            android:gravity="center"
+            android:text="Зарегестрироваться"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnWorker"
+            android:layout_width="245dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="500dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Вернуться ко входу"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Filarmony</string>
+    <string name="logIn">Вход</string>
+    <string name="innerData">Введите данные</string>
+    <string name="passwordHint">Пароль</string>
+    <string name="logInText">Войти</string>
+    <string name="registrationText">Регистрация</string>
+    <string name="createTeble">CREATE TABLE</string>
+</resources>

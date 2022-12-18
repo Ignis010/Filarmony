@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="640dp"
+    tools:context=".LoginWorker">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFBF40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:gravity="center"
+            android:text="@string/logIn"
+            android:textSize="42sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#FFD073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="131dp"
+            android:text="@string/innerData"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="210dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Логин"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="245dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="289dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/passwordHint"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="169dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="337dp"
+            android:backgroundTint="@color/btnColor"
+            android:gravity="center"
+            android:text="@string/logInText"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnWorker"
+            android:layout_width="245dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="407dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Зайти как сотрудник"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnRegistration"
+            android:layout_width="245dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="447dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Регистрация"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

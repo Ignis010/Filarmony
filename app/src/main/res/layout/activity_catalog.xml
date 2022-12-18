@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    tools:context=".Catalog">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFBF40">
+
+                <ImageButton
+                    android:id="@+id/menu"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/menu"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="52dp"
+                    android:gravity="center"
+                    android:text="Каталог"
+                    android:textSize="42sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="#FFBF40"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/searchLine"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/btnSearch"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/group_1"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/line_7" />
+
+                <Button
+                    android:id="@+id/filter"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Фильтр"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/event1"
+                android:layout_width="337dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="139dp">
+
+                <ImageView
+                    android:id="@+id/poster"
+                    android:layout_width="92dp"
+                    android:layout_height="125dp"
+                    app:srcCompat="@drawable/f9d6d5940f84d5e25a9fd39762234b83" />
+
+                <TextView
+                    android:id="@+id/eventTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="113dp"
+                    android:gravity="center"
+                    android:text="MTV's unplugged in new york"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/later"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="80dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Перейти"
+                    android:textColor="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/event2"
+                android:layout_width="337dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="328dp">
+
+                <ImageView
+                    android:id="@+id/poster2"
+                    android:layout_width="92dp"
+                    android:layout_height="125dp"
+                    app:srcCompat="@drawable/_7799602bdb407b40641180f6c5a7f92" />
+
+                <TextView
+                    android:id="@+id/eventTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="113dp"
+                    android:gravity="center"
+                    android:text="Sam Houston Coliseum"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/later2"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="80dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Перейти"
+                    android:textColor="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/event3"
+                android:layout_width="337dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="517dp">
+
+                <ImageView
+                    android:id="@+id/poster3"
+                    android:layout_width="92dp"
+                    android:layout_height="125dp"
+                    app:srcCompat="@drawable/_07a53cd0c34cfaf7c0d8154786414ca" />
+
+                <TextView
+                    android:id="@+id/eventTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="113dp"
+                    android:gravity="center"
+                    android:text="The Black Ice World Tour"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/later3"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="80dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Перейти"
+                    android:textColor="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </FrameLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
